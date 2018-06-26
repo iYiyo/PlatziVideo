@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es, en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PlatziVideo</title>
+</head>
+<body>
+    <span class="burger-menu" id="burger"></span>
+    <section class="menu">
+        <figure>
+            <a href="">
+                <h2>Platzi<span>Video</span></h2>
+            </a>
+        </figure>
+        <nav id="menu">
+            <div>
+                <a href="">My Playlist</a>
+                <ol>
+                    <li><a href="#">5 Resons To Chose A Notebook Over A Computer Desktop</a></li>
+                    <li><a href="#">Get Around Easily With A New York Limousine Service</a></li>
+                    <li><a href="#">How To Cook A Tender Juicy Steak</a></li>
+                    <li><a href="#">How To Remove Kidney Stones</a></li>
+                    <li><a href="#">The Science Of Supersitions</a> </li>
+                    <li><a href="#">5 Resons To Chose A Notebook Over A Computer Desktop</a></li>
+                    <li><a href="#">Get Around Easily With A New York Limousine Service</a></li>
+                    <li><a href="#">How To Cook A Tender Juicy Steak</a></li>
+                    <li><a href="#">How To Remove Kidney Stones</a> </li>
+                    <li><a href="#">The Science Of Supersitions</a> </li>
+                </ol>
+            </div>
+            <div>
+                <a href="#">PlayList of Friends</a>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/friend1.jpg" alt="friend" width="35px" height="35px" >
+                            <h3>Lidia Carroll</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/friend2.jpg" alt="friend" width="35px" height="35px">
+                            <h3>John Wheeler</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/friend3.jpg" alt="friend" width="35px" height="35px">
+                            <h3>Ale strekozova</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/friend4.jpg" alt="friend" width="35px" height="35px">
+                            <h3>Sussy Wilkins</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+    </section>
+    <section class="video">
+        <figure>
+            <img src="img/monterrey.jpg" alt="video">
+        </figure>
+        <i class="far fa-play-circle"></i>
+        <i class="fas fa-arrow-left"></i>
+    </section>
+    <section class="info">
+        <main class="video-info">
+            <div class="title">
+                <h1>New Order - Bizarre Love Triangle</h1>
+            <p>124,886 views</p>
+        </div>
+          <div class="share-container">
+              <div class="share">
+                <button type="button" name="button">Add to list</button>
+                <i class="fas fa-share"><br>Share</i>
+                <i class="fas fa-cloud-download-alt"><br>Download</i>
+            </div>
+            <div class="category">
+                <span>Electronic</span>
+                <span>Roc</span>
+                <span>80</span>
+                <span>Rela</span>
+            </div>
+        </div>
+    </main>
+    
+    <div class="video-comments"> 
+        <div class="comments">  <!--comments-->
+            <h4>Comments</h4>
+            
+            <div class="myword"> <!--MY comment-->
+                <img src="img/my.jpg" alt="photo" width="100px">
+                <input type="text" name="" value="" placeholder="Add a Comment">
+            </div>
+            
+            <!--Other comments-->
+            <div>
+                <div class="other">  
+                    <img src="img/hater.jpg" alt="photo" height="100px">
+                    <div class="text">
+                    <a href="#">Gordon Carroll</a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit hic accusamus saepe in iusto excepturi quasi magni illum libero atque, culpa labore! Quis laudantium ipsa fugiat sunt, similique praesentium ipsam.</p>
+                </div>
+            </div>
+            <div class="other">
+                    <img src="img/hater.jpg" alt="photo" height="100px">
+                    <div class="text">
+                    <a href="#">Gordon Carroll</a>
+                    <p>This a comment from hater </p>
+                    </div>
+                </div>
+                <div class="other">
+                    <img src="img/hater.jpg" alt="photo" height="100px">
+                    <div class="text">
+                        <a href="#">Gordon Carroll</a>
+                        <p>This a comment from hater </p>
+                    </div>
+                </div>
+                <div class="other">
+                    <img src="img/hater.jpg" alt="photo" height="100px">
+                    <div class="text">
+                        <a href="#">Gordon Carroll</a>
+                        <p>This a comment from hater </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+             <!--Other comments-->
+             
+             <aside class="suggestions">
+                 <h4>Up Next</h4>
+            <div class="next">
+                <a href="#">
+                <img src="img/min.jpg" alt="Video not found" width="250px">
+                <p>This Is A Click Bait</p>
+            </a>
+            </div>
+            <div class="next">
+                <a href="#">
+                    <img src="img/min2.jpg" alt="Video not found" width="250px">
+                    <p>This Is A Click Bait Too</p>
+                </a>
+            </div>
+        </aside>
+    </div>
+</section>
+<script type="text/javascript">
+        const $burger = document.getElementById("burger");
+        const $menu = document.getElementById("menu");
+        $burger.addEventListener("click", active);
+
+        function active(){
+            $burger.classList.toggle("close");
+            $menu.classList.toggle("active");
+        }
+    </script>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</body>
+</html>
